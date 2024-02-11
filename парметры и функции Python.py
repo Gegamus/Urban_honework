@@ -1,7 +1,6 @@
 def print_params():
-    print('Привет, я функция!')
-
+    param = "Привет я фнкция"
+    print(param)
 
 for _ in range(2):
     print_params()
-
