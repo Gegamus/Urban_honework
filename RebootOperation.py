@@ -2,9 +2,11 @@ class Building:
 
     def __init__(self, gift=None):
         self.buildingType = []
-        self.numberOfFloors = []
         if gift:
             self.buildingType.append(gift)
+
+    def __str__(self):
+        self.numberOfFloors = []
 
     def __eq__(self):
         return self.numberOfFloors == self.buildingType
