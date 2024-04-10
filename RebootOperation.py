@@ -1,15 +1,15 @@
 class Building:
+    def __init__(self, numberOfFloors, buildingType):
+        self.numberOfFloors = numberOfFloors
+        self.buildingType = buildingType
 
-    def __init__(self, gift=None):
-        self.buildingType = []
-        if gift:
-            self.buildingType.append(gift)
+    def __eq__(self, other):
+        if isinstance(other, Building):
+            return self.numberOfFloors == other.numberOfFloors and self.buildingType == other.buildingType
+        return False
 
-    def __str__(self):
-        self.numberOfFloors = []
+building1 = Building(5, "Residential")
+building2 = Building(5, "Residential")
+building3 = Building(10, "Office")
 
-    def __eq__(self):
-        return self.numberOfFloors == self.buildingType
-
-buildindType = Building(gift="Много этажей")
-numberOfFloors = Building(gift="50 этажей")
+print(building1 == building2)  # True
