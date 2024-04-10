@@ -8,6 +8,7 @@ class Car:
 
 
 class Nissan(Car):
+
     price = 1800000
 
     def horse_powers(self):
@@ -15,7 +16,9 @@ class Nissan(Car):
 
 
 class Kia(Car):
+
     price = 1250000
 
     def horse_powers(self):
-        return 115
+        return 250
+
