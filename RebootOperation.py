@@ -12,4 +12,4 @@ building1 = Building(5, "Residential")
 building2 = Building(5, "Residential")
 building3 = Building(10, "Office")
 
-print(building1 == building2)  # True
+print(building1 == building2)
